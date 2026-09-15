@@ -1,0 +1,13 @@
+-> Behavioral Design Patter(most useful)
+-> The State Design Pattern allows an object to change its behavior based on its current state.
+
+-> Key Concepts of the State Pattern:
+1. State Interface: Defines the common behavior for all states.
+2. Concrete States: Implements the behavior for each state.
+3. Context: Maintains a reference to the current state and delegates requests to the current state object.
+
+
+-> When to use the State Design Pattern:
+* When an object's behavior depends on its state.
+* When you have a lot of if-else or switch statements that change behavior based on state.
+* When the state-specific behavior changes frequently or needs to be easily extendable.

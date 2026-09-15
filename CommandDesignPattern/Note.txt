@@ -1,0 +1,9 @@
+-> Behavioral Design Pattern
+-> used to implement loose coupling in a request-response model
+
+-> Components of Command Design Pattern-
+1. Command
+2. Concrete Command
+3. Receiver
+4. Controller
+5. Invoker

@@ -1,0 +1,5 @@
+-> Structural Design Pattern
+-> It acts as a bridge between two interfaces, making them compatible and enabling them to work seamlessly.
+
+-> The 3 components:
+1. Target Interface, 2. Adaptee, 3. Adapter

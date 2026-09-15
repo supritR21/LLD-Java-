@@ -1,0 +1,8 @@
+-> Creational Design Pattern
+-> Ensure a class has only one instance and provides a global point of access to that instance.
+
+-> 2 forms of Singleton instantiation:
+1. Early Instantiation, 2. Lazy Instantiation
+
+-> Advantages of Singleton design pattern:
+1. Global access, 2. Resource Management, 3. Controlled Instance, 4. Lazy Loading

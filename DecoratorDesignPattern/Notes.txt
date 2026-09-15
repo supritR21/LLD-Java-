@@ -1,0 +1,5 @@
+-> Strucural Design Pattern
+When to use-
+1. Adding New Features
+2. Avoiding Messy Code
+3. Open for Extension, Closed for Modification
