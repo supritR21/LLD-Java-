@@ -1,0 +1,8 @@
+-> It is a behavioral design pattern.
+-> Enable the selection of algorithms at runtime.
+
+-> Define set of algos and encapsulate them in classes.
+-> Promotes open-closed principle.
+
+-> Key Compponents:
+1. Context, 2. Strategy Interface, 3. Concrete Strategies

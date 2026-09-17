@@ -1,0 +1,5 @@
+-> It is an behavioral design pattern.
+-> One to many dependency between objects.
+
+-> Componenets of the Observer Design Pattern:
+1. Subject, 2. Observer, 3. ConcreteSubject, 4. ConcreteObserver

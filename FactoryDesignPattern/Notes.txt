@@ -1,0 +1,3 @@
+-> It is a Creational Design Pattern.
+-> Create an abstract class for creating objects. Object instantiation done by its subclasses.
+-> In Factory Design Pattern you have to always use parameters to determine which instance you want to get.

@@ -1,0 +1,72 @@
+public abstract class SocialMedia {
+    
+    public abstract  void chatWithFriend();
+    
+    public abstract void publishPost(Object post);
+    
+    public abstract  void sendPhotosAndVideos();
+    
+    public abstract  void groupVideoCall(String... users);
+}
+
+public class Facebook extends SocialMedia {
+
+    public void chatWithFriend() {
+        //logic  
+    }
+
+    public void publishPost(Object post) {
+        //logic  
+    }
+
+    public void sendPhotosAndVideos() {
+        //logic  
+    }
+
+    public void groupVideoCall(String... users) {
+        //logic  
+    }
+}
+
+public class WhatsApp extends SocialMedia {
+    public void chatWithFriend() {
+        //logic
+    }
+
+    public void publishPost(Object post) {
+      //Not Applicable
+    }
+
+    public void sendPhotosAndVideos() {
+      //logic
+    }
+
+    public void groupVideoCall(String... users) {
+        //logic
+    }
+}
+
+
+
+public interface SocialMedia {  
+   public void chatWithFriend();
+   public void sendPhotosAndVideos()
+}
+public interface SocialPostAndMediaManager { 
+    public void publishPost(Object post);
+}
+public interface VideoCallManager{ 
+   public void groupVideoCall(String... users);
+}
+
+public class Instagram implements SocialMedia ,SocialPostAndMediaManager{
+   public void chatWithFriend(){
+    //logic
+   }
+   public void sendPhotosAndVideos(){
+    //logic
+   }
+   public void publishPost(Object post){
+    //logic
+   }
+}

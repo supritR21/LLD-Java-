@@ -1,0 +1,10 @@
+-> It is a Creational Design Pattern.
+-> Construct Complex Objects step by step.
+
+-> Key Concepts:
+1. Immutability(immutable objects), 2. Step-by-Step Construction
+
+-> When to use:
+1. Dealing with Complex objects
+2. Avoiding Constructor Overload
+3. Improving Code Readability

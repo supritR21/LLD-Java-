@@ -1,0 +1,65 @@
+public class DebitCard{
+    public void doTransaction(int amount){
+        System.out.println("tx done with DebitCard");
+    }
+}
+
+public class CreditCard{
+    public void doTransaction(int amount){
+        System.out.println("tx done with CreditCard");
+    }
+}
+
+public class ShoppingMall {
+    private DebitCard debitCard;
+    public ShoppingMall(DebitCard debitCard) {
+        this.debitCard = debitCard;
+    }
+    public void doPayment(Object order, int amount){              debitCard.doTransaction(amount); 
+    }
+    public static void main(String[] args) {
+     DebitCard debitCard=new DebitCard();
+     ShoppingMall shoppingMall=new ShoppingMall(debitCard);
+     shoppingMall.doPayment("some order",5000);
+    }
+}
+
+
+
+
+
+
+
+
+public interface BankCard {
+  public void doTransaction(int amount);
+}
+
+
+public class CreditCard implements BankCard{
+    public void doTransaction(int amount){            
+        System.out.println("tx done with CreditCard");
+    }
+}
+
+public class DebitCard implements BankCard{
+    public void doTransaction(int amount){
+        System.out.println("tx done with DebitCard");
+    }
+}
+
+
+public class ShoppingMall {
+    private BankCard bankCard;
+    public ShoppingMall(BankCard bankCard) {
+        this.bankCard = bankCard;
+    }
+    public void doPayment(Object order, int amount){
+        bankCard.doTransaction(amount);
+    }
+    public static void main(String[] args) {
+        BankCard bankCard=new CreditCard();
+        ShoppingMall shoppingMall1=new ShoppingMall(bankCard);
+        shoppingMall1.doPayment("do some order", 10000);
+    }
+}

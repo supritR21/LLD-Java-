@@ -1,0 +1,13 @@
+public interface UPIPayments {
+    
+    public void payMoney();
+    
+    public void getScratchCard();
+    
+    public void getCashBackAsCreditBalance();
+}
+
+
+public interface CashbackManager{
+ public void getCashBackAsCreditBalance();
+}

@@ -1,0 +1,32 @@
+public class NotificationService{
+    public void sendOTP(String medium) {
+        if (medium.equals("email")) {
+            //write email related logic
+            //use JavaMailSenderAPI
+        }
+    }
+}
+
+
+public interface NotificationService{
+    public void sendOTP(String medium);
+    public void sendTransactionNotification(String medium);
+}
+
+public class MobileNotification implements NotificationService{
+    public void sendOTP(String medium) {
+       // write Logic using Twilio SMS API
+    }
+    public void sendTransactionNotification(String medium) {
+        //
+    }
+}
+
+public class WhatsAppNotification implements NotificationService{
+    public void sendOTP(String medium){
+       // write Logic using whatsapp API
+    }
+    public void sendTransactionNotification(String medium){
+        
+    }
+}
